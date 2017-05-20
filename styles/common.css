@@ -1,26 +1,61 @@
+html, body, h1, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif !important;
+  color: #646464;
+}
+
+#header {
+clear:both;
+margin:0;
+}
+
+#footer {
+clear:both;
+margin-bottom:0;
+padding: 15px;
+background-color: #21252b;
+border-top: 1px solid #2e343a;
+color:#858d91;
+text-align: center;
+}
+
+#content2 {
+ clear:both;
+ background-color: #21252b;
+ border-top: 1px solid #2e343a;
+ color:#858d91;
+ text-align: center;
+}
+#content2 table {
+	width:100%;
+	border:0 solid #98bf21;
+	border-spacing: 20px;
+	text-align:left;
+	
+}
+
+#content2 a:link
+{
+	 color:#858d91;
+    text-decoration: none;
+}
+
 body {
-margin:0px;
-color: #333333;
-background-color:#dddddd;
-font-family: "Times New Roman", Times, serif;
+background-color:#ffffff;
 }
 
 #container {
 margin:10px;
 width:1064px;
 border: 1px solid #a1a1a1;
-background-color:#ffffff;
+background-color:#dddddd;
 border-radius:5px;
 margin-left:auto;
 margin-right:auto;
 }
 
-#header {
-clear:both;
-}
-
 #navigation {
-clear:both;
 }
 
 #navigation ul {
@@ -28,7 +63,6 @@ clear:both;
     margin: 0;
     padding: 0;
     overflow: hidden;
-	width:100%;
 }
 
 #navigation  ul li {
@@ -38,39 +72,50 @@ clear:both;
 #navigation  ul li a:link, #navigation  ul li a:visited {
     display: block;
     font-weight: bold;
-	width:196px;
-    color: #FFFFFF;
-    background-color: #98bf21;
+	margin-top:15px;
+    background-color: #FFFFFF;
+    color: #98bf21;
     text-align: center;
-    padding: 4px;
+    padding: 20px;
     text-decoration: none;
 }
 
 #navigation  ul li  a:hover, #navigation  ul li  a.active {
-    background-color: #7A991A;
+    color: #7A991A;
 }
 
-#content {
+#home {
  clear:both;
+  background-color:#ffc300;
 }
 
-#content2 {
+#products {
  clear:both;
-}
-#content2 table {
-	width:100%;
-	border:1px solid #98bf21;
-	padding-left:20px;
-	text-align:left;
+ --background-color:#ffeb41;
 }
 
-#footer {
+#services {
+ clear:both;
+ --background-color:#e5e7e9;
+}
+
+#mobile-apps {
+ clear:both;
+ --background-color:#FFFFFF;
+ height:100px;
+}
+
+#contact {
 clear:both;
+ background-color:#98bf21;
+background-image: url('../images/map-base.png');
+background-position: 50% 50%;
+background-repeat: no-repeat;
 }
 
 .margin {
-margin:10px;
 width:1024px;
+padding:20px;
 margin-left:auto;
 margin-right:auto;
 }

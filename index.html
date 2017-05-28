@@ -135,26 +135,20 @@ requirement.
 </div>
 
  <div style="float:right;margin:10px;">
- <script src="http://maps.googleapis.com/maps/api/js">
-</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
 <script>
-
-function initialize() {
-var myCenter=new google.maps.LatLng(28.579515, 77.367924);
-  var mapProp = {
-    center:myCenter,
-    zoom:11,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-  var marker=new google.maps.Marker({ position:myCenter,});
-  marker.setMap(map);
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(28.579515, 77.367924),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
 }
-google.maps.event.addDomListener(window, 'load', initialize);
-
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
 </script>
-<div id="googleMap" style="width:500px;height:400px;"></div>
+
+<div id="map" style="width:500px;height:400px;"></div>
  </div>
 
 </div>

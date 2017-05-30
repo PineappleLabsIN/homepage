@@ -6,8 +6,13 @@ html, body, h1, h3, p {
 }
 
 #header {
-clear:both;
-margin:0;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    z-index: 100;
+}
+
 }
 
 #footer {
@@ -85,6 +90,7 @@ margin-right:auto;
 }
 
 #home {
+	margin-top:80px;
  clear:both;
   background-color:#ffc300;
 }
@@ -116,6 +122,13 @@ background-repeat: no-repeat;
 .margin {
 width:1024px;
 padding:20px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.margin_header {
+width:1024px;
+padding:0;
 margin-left:auto;
 margin-right:auto;
 }
